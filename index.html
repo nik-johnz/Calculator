@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+
+  <!-- Bootstrap -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Javascript -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="./calc.css">
+
+<body style=" background-color: rgb(0, 0, 0);">
+    
+   <div class="container text-center mt-5 border border-light border-2 w-25 bg-info rounded-4" id="container">
+    <h3 class="text-center mt-3">Calculator</h3>
+        <div>
+            <input type="text" id="result" placeholder="0" class="mt-3 rounded-4" style="height: 60px; width: 290px" readonly>  <!-- readonly used for only reading not for typing values -->
+        </div>
+        <div class="container mt-3 mb3">
+            <button class="rounded-4  bg-danger" style="width: 145px; height: 70px;" onclick="clearall()">AC</button>
+            <button class="rounded-4" style="height: 70px; width: 145px;" onclick="back()">⌫</button>
+           </div>
+        <div class="container mt-3 ">
+            <button class="rounded-4" style="height: 70px; width: 70px;" onclick="display('7')">7</button>
+            <button class="rounded-4" style="height: 70px; width: 70px;" onclick="display('8')">8</button>
+            <button class="rounded-4" style="height: 70px; width: 70px;" onclick="display('9')">9</button>
+            <button class="rounded-4" style="height: 70px; width: 70px;" onclick="display('/')">/</button>
+        </div>
+        <div class="container mt-3">
+            <button class="rounded-4"  style="height: 70px; width: 70px;" onclick="display('4')">4</button>
+            <button class="rounded-4"  style="height: 70px; width: 70px;" onclick="display('5')">5</button>
+            <button class="rounded-4"  style="height: 70px; width: 70px;" onclick="display('6')">6</button>
+            <button class="rounded-4"  style="height: 70px; width: 70px;" onclick="display('+')">+</button>
+        </div>
+        <div class="container mt-3">
+            <button class="rounded-4"  style="height: 70px; width: 70px;" onclick="display('1')">1</button>
+            <button class="rounded-4"  style="height: 70px; width: 70px;" onclick="display('2')">2</button>
+            <button class="rounded-4"  style="height: 70px; width: 70px;" onclick="display('3')">3</button>
+            <button class="rounded-4"  style="height: 70px; width: 70px;" onclick="display('-')">-</button>
+        </div>
+        <div class="container mt-3 mb-3">
+            <button class="rounded-4"  style="height: 70px; width: 70px;" onclick="display('0')">0</button>
+            <button class="rounded-4"  style="height: 70px; width: 70px;" onclick="display('.')">.</button>
+            <button class="rounded-4"  style="height: 70px; width: 70px;" onclick="sol()">=</button>
+            <button class="rounded-4"  style="height: 70px; width: 70px;" onclick="display('*')">*</button>
+        </div>
+       
+   </div>
+   
+    
+</body>
+<script src="./calc.js"></script>
+
+</html>
